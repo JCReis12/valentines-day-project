@@ -61,12 +61,19 @@ body:before {
   min-width: 145px;
 }
 .brand-heart {
+  flex: 0 0 46px;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
   background: linear-gradient(145deg, #ef4a5d, #a70c43);
   color: #fff;
   border-radius: 50%;
   font-size: 21px;
-  padding: 7px 9px;
   box-shadow: 0 3px 8px #b20e3640;
+}
+.brand > span:last-child {
+  min-width: 0;
 }
 .site-header nav {
   display: flex;
@@ -442,6 +449,21 @@ body:before {
   padding: 20px;
   box-shadow: 0 6px 8px #7d193014;
   max-width: 370px;
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+body.reveal-ready .story-card {
+  opacity: 0;
+  transform: translateY(22px);
+}
+body.reveal-ready .story-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.timeline-item:nth-child(odd) .story-card {
+  transition-delay: 0.08s;
+}
+.timeline-item:nth-child(even) .story-card {
+  transition-delay: 0.16s;
 }
 .story-card b {
   font-size: 9px;
@@ -694,8 +716,10 @@ footer small {
     font-size: 13px;
   }
   .brand-heart {
+    flex-basis: 36px;
+    width: 36px;
+    height: 36px;
     font-size: 16px;
-    padding: 6px 8px;
   }
   .site-header nav {
     display: none;
@@ -843,6 +867,12 @@ footer small {
   .heart {
     animation: none;
     display: none;
+  }
+  body.reveal-ready .story-card,
+  body.reveal-ready .story-card.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
   .photo-stage img {
     transition: none;

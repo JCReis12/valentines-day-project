@@ -32,6 +32,19 @@ const SITE_CONFIG = {
     },
   ],
 };
+document.body.classList.add("reveal-ready");
+const storyCards = document.querySelectorAll(".story-card");
+const storyCardObserver = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  },
+  { threshold: 0.2 },
+);
+storyCards.forEach((card) => storyCardObserver.observe(card));
 const photo = document.getElementById("main-photo"),
   thumbnails = document.getElementById("thumbnails");
 let currentPhoto = 0;
