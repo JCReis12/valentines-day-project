@@ -105,8 +105,45 @@ body:before {
   font-size: 20px;
 }
 .music-pill i {
-  color: #ee5263;
   font-style: normal;
+}
+.equalizer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  width: 18px;
+  height: 22px;
+}
+.equalizer span {
+  display: block;
+  width: 3px;
+  min-height: 5px;
+  border-radius: 3px;
+  background: #ee5263;
+  transform-origin: center;
+  animation: equalizer-bounce 0.85s ease-in-out infinite alternate;
+}
+.equalizer span:nth-child(1) {
+  height: 9px;
+  animation-delay: -0.35s;
+}
+.equalizer span:nth-child(2) {
+  height: 17px;
+  animation-duration: 0.65s;
+}
+.equalizer span:nth-child(3) {
+  height: 12px;
+  animation-delay: -0.15s;
+  animation-duration: 0.95s;
+}
+@keyframes equalizer-bounce {
+  from {
+    transform: scaleY(0.45);
+  }
+  to {
+    transform: scaleY(1.15);
+  }
 }
 .section-shell {
   max-width: 1100px;
@@ -504,8 +541,9 @@ body.reveal-ready .story-card.is-visible {
 .love-letter {
   position: absolute;
   left: 50%;
-  bottom: 24px;
-  z-index: 2;
+  top: 100%;
+  bottom: auto;
+  z-index: 1;
   width: min(820px, calc(100% - 42px));
   margin: 0;
   background: #fffdf8;
@@ -516,9 +554,10 @@ body.reveal-ready .story-card.is-visible {
   color: #776569;
   font-family: Georgia, serif;
   line-height: 1.6;
-  opacity: 1;
-  transform: translate(-50%, 90%);
-  transition: opacity 0.45s ease, transform var(--envelope-open-duration) cubic-bezier(0.22, 0.8, 0.28, 1), box-shadow 0.8s ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: opacity 0.45s ease, top var(--envelope-open-duration) cubic-bezier(0.22, 0.8, 0.28, 1), box-shadow 0.8s ease;
 }
 .envelope-scene {
   --envelope-open-duration: 1.35s;
@@ -624,8 +663,10 @@ body.reveal-ready .story-card.is-visible {
 }
 .envelope-address {
   left: 12%;
-  top: 54%;
+  top: 70%;
+  max-width: 38%;
   font-size: clamp(14px, 2vw, 19px);
+  line-height: 1.15;
   font-style: italic;
 }
 .envelope-return {
@@ -687,11 +728,13 @@ body.reveal-ready .story-card.is-visible {
 .envelope-scene[data-envelope-state="opened"] .love-letter {
   z-index: 5;
   opacity: 1;
-  transform: translate(-50%, -12%);
+  visibility: visible;
+  top: 24px;
   box-shadow: 0 22px 34px #9720372e;
 }
 .envelope-scene[data-envelope-state="closed"] .love-letter {
   opacity: 0;
+  visibility: hidden;
 }
 .envelope-scene[data-envelope-state="opening"] .envelope-seal,
 .envelope-scene[data-envelope-state="opened"] .envelope-seal {
@@ -1011,8 +1054,11 @@ footer small {
     font-size: 22px;
   }
   .envelope-address {
-    top: 53%;
+    left: 9%;
+    top: 68%;
+    max-width: 37%;
     font-size: 14px;
+    line-height: 1.1;
   }
   .envelope-return {
     font-size: 9px;
@@ -1076,6 +1122,10 @@ footer small {
   .heart {
     animation: none;
     display: none;
+  }
+  .equalizer span {
+    animation: none;
+    transform: none;
   }
   body.reveal-ready .story-card,
   body.reveal-ready .story-card.is-visible {
