@@ -562,7 +562,7 @@ body.reveal-ready .story-card.is-visible {
 .envelope-scene {
   --envelope-open-duration: 1.35s;
   min-height: 760px;
-  padding-top: 150px;
+  padding-top: 32px;
   position: relative;
   opacity: 0;
   transform: translateY(28px) scale(0.98);
@@ -1040,7 +1040,7 @@ footer small {
   }
   .envelope-scene {
     min-height: 840px;
-    padding-top: 280px;
+    padding-top: 72px;
   }
   .envelope {
     height: 250px;
@@ -1109,7 +1109,7 @@ footer small {
   }
   .envelope-scene {
     min-height: 880px;
-    padding-top: 300px;
+    padding-top: 80px;
   }
   .love-letter {
     padding: 38px 20px 32px;
