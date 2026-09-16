@@ -45,6 +45,42 @@ const storyCardObserver = new IntersectionObserver(
   { threshold: 0.2 },
 );
 storyCards.forEach((card) => storyCardObserver.observe(card));
+const ENVELOPE_CONFIG = {
+  openingDuration: 1350,
+};
+const envelopeScene = document.getElementById("envelope-scene");
+const envelopeSeal = document.getElementById("envelope-seal");
+let envelopeState = "CLOSED";
+
+function setEnvelopeState(state) {
+  envelopeState = state;
+  envelopeScene.dataset.envelopeState = state.toLowerCase();
+}
+
+const envelopeObserver = new IntersectionObserver(
+  ([entry], observer) => {
+    if (!entry.isIntersecting) return;
+    envelopeScene.classList.add("is-visible");
+    observer.unobserve(envelopeScene);
+  },
+  { threshold: 0.18 },
+);
+envelopeObserver.observe(envelopeScene);
+
+envelopeSeal.addEventListener("click", () => {
+  if (envelopeState !== "CLOSED") return;
+  envelopeSeal.setAttribute("aria-expanded", "true");
+  setEnvelopeState("OPENING");
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    setEnvelopeState("OPENED");
+    return;
+  }
+
+  window.setTimeout(() => {
+    setEnvelopeState("OPENED");
+  }, ENVELOPE_CONFIG.openingDuration);
+});
 const photo = document.getElementById("main-photo"),
   thumbnails = document.getElementById("thumbnails");
 let currentPhoto = 0;

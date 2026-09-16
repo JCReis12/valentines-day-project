@@ -183,35 +183,49 @@
             emocionar...”
           </p>
         </div>
-        <article class="love-letter">
-          <span class="postal"
-            >♧<br /><small>CORREIO DO<br />AMOR<br />[ano inicial]–[ano final]</small></span
-          >
-          <p class="to">Para: [nome do destinatário] ♥</p>
-          <h3>Meu amor,</h3>
-          <p>
-            Hoje eu queria te lembrar o quanto você é o meu refúgio favorito.
-            Desde que você entrou na minha vida, o mundo ganhou cores mais vivas
-            e a rotina virou motivo de poesia.
-          </p>
-          <p>
-            Amo o jeito como você ri de piadas bobas, como segura minha mão
-            quando está frio e a generosidade com que você cuida de nós dois.
-            Cada conversa, cada silêncio compartilhado e cada plano desenhado
-            para o amanhã reforçam a melhor escolha que já fiz na minha vida.
-          </p>
-          <p>
-            Obrigado por ser minha parceira de todas as horas, meu amor
-            tranquilo e a minha aventura favorita. Prometo continuar escolhendo
-            você nos dias de sol radiante e segurando sua mão com ainda mais
-            força e ternura nos dias de chuva.
-          </p>
-          <hr />
-          <p class="signature">
-            Com todo o meu amor e para todo o sempre,<strong>[nome do remetente] ♥</strong>
-          </p>
-          <button class="wax" aria-label="Selo de amor">♥</button>
-        </article>
+        <div class="envelope-scene" id="envelope-scene" data-envelope-state="closed">
+          <div class="envelope" aria-label="Envelope com uma carta de amor">
+            <div class="envelope-back"></div>
+            <article class="love-letter">
+              <span class="postal"
+                >♧<br /><small>CORREIO DO<br />AMOR<br />[ano inicial]–[ano final]</small></span
+              >
+              <p class="to">Para: [nome do destinatário] ♥</p>
+              <h3>Meu amor,</h3>
+              <p>
+                Hoje eu queria te lembrar o quanto você é o meu refúgio favorito.
+                Desde que você entrou na minha vida, o mundo ganhou cores mais vivas
+                e a rotina virou motivo de poesia.
+              </p>
+              <p>
+                Amo o jeito como você ri de piadas bobas, como segura minha mão
+                quando está frio e a generosidade com que você cuida de nós dois.
+                Cada conversa, cada silêncio compartilhado e cada plano desenhado
+                para o amanhã reforçam a melhor escolha que já fiz na minha vida.
+              </p>
+              <p>
+                Obrigado por ser minha parceira de todas as horas, meu amor
+                tranquilo e a minha aventura favorita. Prometo continuar escolhendo
+                você nos dias de sol radiante e segurando sua mão com ainda mais
+                força e ternura nos dias de chuva.
+              </p>
+              <hr />
+              <p class="signature">
+                Com todo o meu amor e para todo o sempre,<strong>[nome do remetente] ♥</strong>
+              </p>
+            </article>
+            <div class="envelope-front">
+              <span class="envelope-address">Para: [nome do destinatário] ♥</span>
+              <span class="envelope-return">Com carinho,<br />[nome do remetente]</span>
+              <span class="envelope-postmark">CORREIO<br />DO AMOR</span>
+            </div>
+            <div class="envelope-flap"></div>
+            <button class="envelope-seal" id="envelope-seal" type="button" aria-label="Abrir o envelope" aria-expanded="false">
+              ♥
+            </button>
+          </div>
+          <p class="envelope-hint" aria-live="polite">Clique no selo para abrir sua carta</p>
+        </div>
       </section>
       <section class="section-shell memories" id="lembrancas">
         <div class="section-heading">

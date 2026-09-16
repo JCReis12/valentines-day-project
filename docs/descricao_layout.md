@@ -88,6 +88,8 @@ Cada card possui fitas adesivas decorativas em tons alternados e sombras suaves 
 
 ### 💌 5. Correspondência do Coração (A Carta de Amor)
 
+- A carta é apresentada dentro de um envelope integrado à página. Ao entrar na região pelo scroll, o envelope aparece fechado; o usuário precisa clicar no lacre central para abrir a aba e revelar a carta.
+- A interação usa os estados `CLOSED`, `OPENING` e `OPENED`. A carta desliza para cima durante a abertura e permanece sobre o envelope depois da animação.
 - **Visual de Papel de Carta Texturizado**:
   - Um card amplo com borda dourada dupla finíssima e tom creme marfim, reproduzindo a textura de um papel vegetal nobre de 180g.
   - Selo comemorativo no topo direito com carimbo postal estilizado *"Correio do Amor • Edição Especial [ano inicial]-[ano final]"*.
