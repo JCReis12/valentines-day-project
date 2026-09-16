@@ -1,5 +1,5 @@
 const SITE_CONFIG = {
-  coupleName: "[nome do remetente]",
+  coupleName: "[nome do destinatário] & [nome do remetente]",
   relationshipStart: "2021-06-12T19:30:00",
   photos: [
     {

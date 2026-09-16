@@ -23,7 +23,7 @@ O projeto foi concebido sob o conceito de **"Scrapbook Digital de Luxo & Relicá
 
 ### 🧭 Cabeçalho / Barra de Navegação Flutuante
 
-- **Identidade do Casal**: No canto superior esquerdo, o monograma em selo em relevo com *"[nome do remetente]"* acompanhado de um ícone de coração acolhedor.
+- **Identidade do Casal**: No canto superior esquerdo, o monograma em selo em relevo com *"[nome do destinatário] & [nome do remetente]"* acompanhado de um ícone de coração acolhedor.
 - **Links de Seção com Rolagem Suave**:
   1. *Nossos Momentos* (Álbum)
   2. *Nosso Tempo* (Contador)
@@ -92,7 +92,7 @@ Cada card possui fitas adesivas decorativas em tons alternados e sombras suaves 
   - Um card amplo com borda dourada dupla finíssima e tom creme marfim, reproduzindo a textura de um papel vegetal nobre de 180g.
   - Selo comemorativo no topo direito com carimbo postal estilizado *"Correio do Amor • Edição Especial 2021-2026"*.
 - **Estrutura Epistolar**:
-  - Cabeçalho: *"Para: [nome do remetente] ♥"*
+  - Cabeçalho: *"Para: [nome do destinatário] ♥"*
   - Saudação: *"Meu amor,"*
   - Corpo do Texto: Prosa lírica, intimista e tocante sobre refúgio, parceria, rotina e o compromisso de se escolherem todos os dias, faça chuva ou faça sol.
   - Despedida e Assinatura: *"Com todo o meu amor e para todo o sempre, [nome do remetente] ❤️"*
