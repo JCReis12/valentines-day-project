@@ -1,5 +1,5 @@
 const SITE_CONFIG = {
-  coupleName: "Lucas & Sofia", // ALTERE ESTA DATA PARA DEFINIR O INÍCIO DO RELACIONAMENTO
+  coupleName: "[nome do remetente]",
   relationshipStart: "2021-06-12T19:30:00",
   photos: [
     {
