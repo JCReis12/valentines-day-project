@@ -43,7 +43,7 @@ O projeto foi concebido sob o conceito de **"Scrapbook Digital de Luxo & Relicá
 - **Botões de Ação**:
   - Botão Primário: Em formato pílula em vinho rubi vibrante: *"Começar nossa história ↓"*, com microanimação de salto suave.
   - Botão Secundário: Estilo contorno elegante: *"Abrir minha carta ✉"*.
-- **Divisor Temático**: Um selo dourado clássico com *"Desde 12 de Junho • Um amor celebrado em cada instante ♡"*.
+- **Divisor Temático**: Um selo dourado clássico com *"Desde [dia] de [mês] de [ano] • Um amor celebrado em cada instante ♡"*.
 
 ---
 
@@ -67,7 +67,7 @@ O projeto foi concebido sob o conceito de **"Scrapbook Digital de Luxo & Relicá
   - Silhueta de coração em marca d'água translúcida no fundo da caixa.
 - **Blocos Temporais**:
   - 6 mostradores dedicados: **05 Anos**, **03 Meses**, **01 Dias**, **20 Horas**, **13 Minutos** e **21 Segundos** (com o bloco de segundos em destaque dourado pulsante).
-  - O contador roda via JavaScript em tempo real, atualizando a cada segundo a partir da data marcante (12 de Junho de 2021).
+  - O contador roda via JavaScript em tempo real, atualizando a cada segundo a partir da data marcante ([dia] de [mês] de [ano]).
 - **Frase-Assinatura**: *"E eu escolheria você novamente em cada um desses segundos."*
 
 ---
@@ -76,10 +76,10 @@ O projeto foi concebido sob o conceito de **"Scrapbook Digital de Luxo & Relicá
 
 A linha vertical central é desenhada em tom coral dourado com nós em medalhões de cera numerados ou iconográficos, intercalando momentos à esquerda e à direita:
 
-1. **O Início de Tudo (Maio de 2021)**: Relato do primeiro café e da primeira conversa interminável, acompanhado de uma mini-polaroid da mesa com a anotação manual *"Aquele primeiro sorriso!"*.
-2. **Nosso Encontro Marcado (12 de Junho de 2021)**: O primeiro jantar oficial e a certeza instantânea, com a foto do casal de mãos dadas pelas ruas históricas sob o céu estrelado.
-3. **Palavras que Ficaram (Outubro de 2021)**: O primeiro *"Eu Te Amo"* sob chuva fina, destacado em um card estilo citação poética dourada.
-4. **Horizontes Novos (Verão de 2022)**: A primeira grande viagem de carro juntos, com a foto nostálgica na beira da praia ao crepúsculo.
+1. **O Início de Tudo ([mês] de [ano])**: Relato do primeiro café e da primeira conversa interminável, acompanhado de uma mini-polaroid da mesa com a anotação manual *"Aquele primeiro sorriso!"*.
+2. **Nosso Encontro Marcado ([dia] de [mês] de [ano])**: O primeiro jantar oficial e a certeza instantânea, com a foto do casal de mãos dadas pelas ruas históricas sob o céu estrelado.
+3. **Palavras que Ficaram ([mês] de [ano])**: O primeiro *"Eu Te Amo"* sob chuva fina, destacado em um card estilo citação poética dourada.
+4. **Horizontes Novos ([estação] de [ano])**: A primeira grande viagem de carro juntos, com a foto nostálgica na beira da praia ao crepúsculo.
 5. **Os Pequenos Dias Comuns (Todos os dias)**: Homenagem à rotina aconchegante, cafés na cama e risadas soltas, com a foto do piquenique florido no parque.
 
 Cada card possui fitas adesivas decorativas em tons alternados e sombras suaves que simulam papéis colados à mão.
@@ -90,7 +90,7 @@ Cada card possui fitas adesivas decorativas em tons alternados e sombras suaves 
 
 - **Visual de Papel de Carta Texturizado**:
   - Um card amplo com borda dourada dupla finíssima e tom creme marfim, reproduzindo a textura de um papel vegetal nobre de 180g.
-  - Selo comemorativo no topo direito com carimbo postal estilizado *"Correio do Amor • Edição Especial 2021-2026"*.
+  - Selo comemorativo no topo direito com carimbo postal estilizado *"Correio do Amor • Edição Especial [ano inicial]-[ano final]"*.
 - **Estrutura Epistolar**:
   - Cabeçalho: *"Para: [nome do destinatário] ♥"*
   - Saudação: *"Meu amor,"*
@@ -121,7 +121,7 @@ Uma grade 3x2 de notas coloridas tipo *post-its* e ingressos de memória em pale
 - **Gatilho de Interatividade Surpresa**:
   - Botão em cápsula rubi: *"Aperte aqui para receber meu amor ❤️"*.
   - Ao ser clicado, dispara uma animação via CSS/JS que gera dezenas de pequenos corações multicoloridos que sobem pela tela em gravidade zero.
-- **Rodapé**: Uma declaração suave: *"Para todo o sempre, um relicário de nós dois. Celebrando nosso amor infinito • 12 de Junho de 2021"*.
+- **Rodapé**: Uma declaração suave: *"Para todo o sempre, um relicário de nós dois. Celebrando nosso amor infinito • [dia] de [mês] de [ano]"*.
 
 ---
 
