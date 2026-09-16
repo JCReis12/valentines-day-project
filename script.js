@@ -115,7 +115,7 @@ document.getElementById("heart-button").addEventListener("click", () => {
     heart.className = "heart";
     heart.textContent = Math.random() > 0.25 ? "♥" : "✦";
     heart.style.left = `${Math.random() * 100}vw`;
-    heart.style.bottom = `${-10 - Math.random() * 10}px`;
+    heart.style.top = `${-10 - Math.random() * 10}px`;
     heart.style.color = ["#c0144b", "#ed5b77", "#f5b938", "#d87591"][i % 4];
     heart.style.setProperty("--drift", `${(Math.random() - 0.5) * 180}px`);
     heart.style.animationDelay = `${Math.random() * 0.7}s`;
