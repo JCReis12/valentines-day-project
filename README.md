@@ -39,7 +39,3 @@ O objetivo principal é proporcionar uma experiência especial para a pessoa ama
    python -m http.server 8000
 3. Acesse no navegador:
    http://localhost:8000
-
-## Observação
-
-Este é um projeto de caráter pessoal e sentimental, pensado para ser uma lembrança bonita e um presente digital para celebrar um amor." 
