@@ -33,6 +33,31 @@ const SITE_CONFIG = {
   ],
 };
 document.body.classList.add("reveal-ready");
+const backgroundMusic = document.getElementById("background-music");
+const musicControl = document.getElementById("music-control");
+const musicStatus = musicControl.querySelector(".music-status");
+
+function updateMusicState(isPlaying) {
+  musicControl.classList.toggle("is-playing", isPlaying);
+  musicControl.setAttribute(
+    "aria-label",
+    isPlaying ? "Pausar música" : "Ativar música",
+  );
+  musicStatus.textContent = isPlaying ? "Tocando nossa" : "Toque para ouvir";
+}
+
+backgroundMusic.addEventListener("play", () => updateMusicState(true));
+backgroundMusic.addEventListener("pause", () => updateMusicState(false));
+musicControl.addEventListener("click", () => {
+  if (!backgroundMusic.paused) {
+    backgroundMusic.pause();
+    return;
+  }
+
+  backgroundMusic.play().catch(() => updateMusicState(false));
+});
+backgroundMusic.play().catch(() => updateMusicState(false));
+
 const storyCards = document.querySelectorAll(".story-card");
 const storyCardObserver = new IntersectionObserver(
   (entries, observer) => {

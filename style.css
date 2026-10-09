@@ -100,9 +100,20 @@ body:before {
   font-size: 9px;
   color: var(--wine);
   white-space: nowrap;
+  font-family: inherit;
+  cursor: pointer;
+}
+.music-pill:focus-visible {
+  outline: 2px solid var(--wine);
+  outline-offset: 3px;
 }
 .music-pill .disc {
   font-size: 20px;
+}
+.music-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .music-pill i {
   font-style: normal;
@@ -122,6 +133,9 @@ body:before {
   border-radius: 3px;
   background: #ee5263;
   transform-origin: center;
+  transform: scaleY(0.45);
+}
+.music-pill.is-playing .equalizer span {
   animation: equalizer-bounce 0.85s ease-in-out infinite alternate;
 }
 .equalizer span:nth-child(1) {
