@@ -1,12 +1,12 @@
 # Projeto de Dia dos Namorados
 
-> Local host: http://localhost:8000
+> Link de acesso: [https://valentines-day-web-gift.vercel.app/](https://valentines-day-web-gift.vercel.app/)
 
 Uma página web romântica criada para celebrar um relacionamento com uma experiência visual e emocional, inspirada em um álbum de memórias, uma linha do tempo e uma carta de amor.
 
 ## Sobre o projeto
 
-Este projeto foi desenvolvido como uma homenagem ao amor, com foco em criar uma interface acolhedora, delicada e memorável. A página reúne elementos como:
+Este projeto foi desenvolvido com foco em criar uma interface acolhedora, delicada e memorável para você presentear o seu amor. A página reúne elementos como:
 
 - galeria de fotos com carrossel
 - contador de tempo do relacionamento
