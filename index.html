@@ -23,13 +23,20 @@
         ><a href="#historia">História</a><a href="#carta">Carta de amor</a
         ><a href="#lembrancas">Lembranças</a>
       </nav>
-      <div class="music-pill">
+      <button
+        class="music-pill"
+        id="music-control"
+        type="button"
+        aria-label="Ativar música"
+      >
         <span class="disc">◉</span
-        ><span>Tocando nossa<br /><b>música ♫</b></span
-        ><i class="equalizer" aria-label="Música tocando" role="img"
+        ><span class="music-label"
+          ><span class="music-status">Iniciando música</span
+          ><b>música ♫</b></span
+        ><i class="equalizer" aria-hidden="true"
           ><span></span><span></span><span></span
         ></i>
-      </div>
+      </button>
     </header>
     <main>
       <section class="hero section-shell" id="inicio">
@@ -290,6 +297,7 @@
       <strong>Para todo o sempre, um relicário de nós dois.</strong
       ><small>CELEBRANDO NOSSO AMOR INFINITO · [DIA] DE [MÊS] DE [ANO]</small>
     </footer>
+    <audio id="background-music" src="music/golden-hour.mpeg" loop preload="auto"></audio>
     <script src="script.js"></script>
   </body>
 </html>
